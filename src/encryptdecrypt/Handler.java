@@ -44,7 +44,7 @@ public class Handler {
                 textInputFile = input.read();
                 data = textInputFile;
             } catch (FileNotFoundException e) {
-                System.out.println("File not found");;
+                System.out.println("File not found");
             }
         }
         resultText = callAlgorithm();
@@ -53,6 +53,7 @@ public class Handler {
             try {
                 output = new OutputFile(out, resultText);
                 output.print();
+                System.out.println("Success");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
