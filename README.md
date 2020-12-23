@@ -10,4 +10,12 @@ If there is no -data, and there is no -in the program assume that the data is an
 If there is no -out argument, the program prints data to the standard output.
 If there are both -data and -in arguments, program prefers -data over -in.
 
+All flags:
+-mode
+-data
+-alg
+-in
+-out
+-key
+
 Example: -mode enc -in input.txt -out output.txt -key 5 -alg unicode
