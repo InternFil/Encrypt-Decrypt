@@ -11,11 +11,11 @@ If there is no -out argument, the program prints data to the standard output.
 If there are both -data and -in arguments, program prefers -data over -in.
 
 All flags:
--mode
--data
--alg
--in
--out
--key
+-mode(enc/dec)
+-data(String line)
+-alg(shift/unicode)
+-in(filename.txt)
+-out(filename.txt)
+-key(positive or negative number)
 
 Example: -mode enc -in input.txt -out output.txt -key 5 -alg unicode
